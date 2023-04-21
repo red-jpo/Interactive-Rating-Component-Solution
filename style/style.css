@@ -1,0 +1,134 @@
+* {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+}
+body p {
+  color: hsl(217, 12%, 63%);
+  line-height: 1.5rem;
+}
+body h1 {
+  font-size: 1.85rem;
+  margin: 1.8rem 0 1.2rem;
+  color: white;
+}
+
+main {
+  max-width: 25rem;
+}
+
+.rating-state,
+.thank-you-card {
+  background-color: hsl(213, 19%, 18%);
+  background: linear-gradient(hsl(215, 27%, 17%), hsl(220, 17%, 14%));
+  padding: 2rem 1.7rem;
+  border-radius: 1.5rem;
+}
+
+.rating-state .star-img-container {
+  background-color: hsl(211, 19%, 23%);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rating-state img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.btn-rating ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+.btn-rating .btn {
+  background-color: hsl(213, 19%, 18%);
+  font-weight: 700;
+  width: 3rem;
+  height: 3rem;
+  color: hsl(216, 12%, 54%);
+  border: none;
+  border-radius: 50%;
+  padding-top: 0.2rem;
+  transition: 0.3s;
+}
+.btn-rating .btn:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.btn-rating .btn:focus, .btn-rating .btn.selected {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+.btn-rating .submit {
+  background-color: hsl(25, 97%, 53%);
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  width: 100%;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.8rem 0 0.7rem;
+  letter-spacing: 0.2rem;
+  transition: 0.3s;
+}
+.btn-rating .submit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+.thank-you-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  display: none;
+}
+.thank-you-card #rate-inform {
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(25, 97%, 53%);
+  padding: 0.5rem 1rem 0.2rem;
+  border-radius: 2rem;
+  margin-top: 1.8rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 3vh;
+  color: hsl(217, 12%, 63%);
+}
+footer a {
+  text-decoration: none;
+  color: hsl(25, 97%, 53%);
+  opacity: 70%;
+}
+
+@media only screen and (max-width: 699px) {
+  * {
+    font-size: 14px;
+  }
+  body h1 {
+    font-size: 1.7rem;
+  }
+  main {
+    max-width: 23.1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
